@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head manifest="/manifiesto/manifiesto.cache">
+		<title>Admin-Gym SAS</title>
+		<meta name="description" content="WebLog de Mauricio Gavilan" />
+		<meta name="keywords" content="weblog, blog, Mauricio Gavilan, programador, multimedia" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel=stylesheet href="css/estilo.css" type="text/css" />
+	</head>
+	<body>
+		<div id="cajaheader">
+		</div>
+		<div id="principal" itempscope itemtype="http://www.data-vocabulary.org/Person">
+			<header>
+				
+				<div id="tipo">	
+					<h1><span itemprop="name">Admin-Gym SAS</span></h1> -
+					<h2><span itemprop="title">Software a la Medida</span></h2>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="contacto.html"><canvas id="iconocontacto" width=50" height="50"></canvas><br />Contactenos</a></li>
+						<li><a href="noticias.html"><canvas id="icononoticias" width="50" height="50"></canvas><br />Visión</a></li>
+						<li><a href="sobremi.html"><canvas id="iconosobremi" width="50" height="50"></canvas><br />Misión</a></li>
+						<li><a href="index.html"><canvas id="iconoinicio" width="50" height="50"></canvas><br />Inicio</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="contenido">
+				<section id="sobremi">
+					<span itemprop="photo"><div id="mifoto"></div></span>
+					<h6>
+						Somos una empresa prestadora de servicios ubicada en la ciudad de Bogotá que Trata sobre el desarrollo de software con el fin de ayudar a los gimnasios para que puedan administrar sus procesos administrativos de una mejor y organizada manera. 
+					</h6> 
+				</section>
+				<h1><span itemprop="name">Contáctenos</span></h1>
+				<form action="php/enviamail.php" method="post">
+				
+					<table border=0>
+						<tr>
+							<td width=50%>
+								<p style="text-align:right;">Introduce tu nombre</p>
+							</td>
+							<td width=50%>
+								<input type="text" size=50% placeholder="Tu nombre"required name="nombre"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p style="text-align:right;">Introduce tu email</p>
+							</td>
+							<td>
+								<input type="email" size=50% required placeholder="ejemplo: usuario@dominio.com" name="email"/>
+							</td>
+						</tr>
+						<tr>
+							<td><p style="text-align:right;">Escribe tu mensaje</p>
+							</td>
+							<td>	
+								<textarea cols=50% rows=6 required name="mensaje"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								<input type="submit" value="Enviar">
+							</td>
+						</tr>
+					</table>
+
+				</form>
+			</div>
+			<footer>
+				<h6>
+					<div class="vcard">
+						<div><span class="name">Admin-Gym SAS es una empresa colombiana en integración y desarrollo de soluciones tecnológicas encaminadas a la excelencia y optimización de procesos y gestiones empresariales.</span></div>
+						<div><span class="locality">Bogota</span>-<span class="region">cundinamarca</span>-<span class="postal-code">111</span>-<span class="country-name">Colombia</span></div>
+						<div><span class="tel">12345</span>-<span class="email">gavilanm20@gmail.com</span></div>
+					</div>			
+				</h6>
+				<h6 id="footer"></h6>
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+</html>
+
